@@ -17,10 +17,15 @@ function App() {
     .catch(err=>console.log(err))
  
 
-  },[])
+  },[]);
+  const handler=(value)=>{
+      axios.get(SEARCH+value).then(res=>{
+        setMovies(res.data.results)
+      }).catch(err=>console.log(err))
+  }
   return (
     <React.Fragment>
-    <Header/>
+    <Header handler={handler}/>
     <div className="row">
       {movies.length>0 && movies.map(movie=><Movie key={movie.id} data={movie}/>)}
 

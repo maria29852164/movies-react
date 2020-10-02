@@ -6,9 +6,7 @@ export const Header=(props)=>{
     const refInput=useRef('')
  
    const handlerSearch=()=>{
-      props.handlerQuery(search)
-
-
+      props.handler(search)
    }
    const handlerInput=async()=>{
       setSearch(refInput.current.value)
@@ -19,7 +17,7 @@ export const Header=(props)=>{
 
         <nav>
         <div className="nav-wrapper grey darken-4">
-            <a href="#!" class="brand-logo"><i className="material-icons">cloud</i>Logo</a>
+            <a href="#!" className="brand-logo"><i className="material-icons">cloud</i>Logo</a>
             <ul className="right hide-on-med-and-down search-movie">
           
             <li>
