@@ -1,0 +1,47 @@
+.movie-overview{
+ 
+    position: absolute;
+  
+    bottom: 0;
+    right: 0;
+    left: 0;
+   
+   
+    visibility: hidden;
+}
+
+.card-small{
+    margin-top:1rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.card-small:hover .movie-overview{
+    
+    visibility: visible;
+}
+
+.movie-img{
+    height: 450px;
+    width: 100%;
+}
+
+.vote_average{
+   
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+    border-radius: 3px;
+   
+}
+.movie-info{
+    
+    display:flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+   
+ 
+}
+.title-movie{
+    
+    margin: 0;
+}
